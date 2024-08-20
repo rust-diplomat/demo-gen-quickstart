@@ -1,0 +1,3 @@
+[workspace]
+members = ["basic_adder", "adder_bindings", "generator"]
+resolver = "2"

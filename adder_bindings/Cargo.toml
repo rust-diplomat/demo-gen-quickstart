@@ -1,0 +1,12 @@
+[package]
+name = "adder_bindings"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib", "rlib", "cdylib"]
+
+[dependencies]
+diplomat = { git = "https://github.com/rust-diplomat/diplomat.git", rev = "645c1872e6581074bc559fb72514eb8e96040fb9" }
+diplomat-runtime = { git = "https://github.com/rust-diplomat/diplomat.git", rev = "645c1872e6581074bc559fb72514eb8e96040fb9" }
+basic_adder = { path="../basic_adder/" }
